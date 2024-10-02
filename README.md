@@ -25,3 +25,18 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 The source data for this project is located at:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+**Code Description**
+
+The run_analysis.R file submitted for this project accomplishes the following tasks:
+
+1. Loads the packages required to run the script(data.table and dplyr)
+2. Loads and unzips the source data
+3. Reads each source data file into a separate data frame
+4. Combines test and train data frames for subject, activity and feature measurements
+5. Names all activity-related data columns
+6. Replaces numeric activity values with descriptive activity names
+7. Applies feature names to measurement data columns
+8. Select desired (i.e. mean and standard deviation) measurement columns
+9. Combines subject, activity and measurement data into a single & tidy data set
+10. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
